@@ -13,6 +13,7 @@ def index():
 def check():
     text = request.form['organo']
     ans = model.predict(text)
+    print('Hello')
     return render_template('index.html', ans=ans)
 
 
