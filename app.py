@@ -12,8 +12,8 @@ def index():
 @app.route('/check', methods=['POST'])
 def check():
     text = request.form['organo']
-    ans = model.predict(text)
-    print('Hello')
+    ans = model.predict(str(text))
+    print('Bye Bye Have a Nice Day!')
     return render_template('index.html', ans=ans)
 
 

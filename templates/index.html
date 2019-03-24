@@ -1,51 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GSOC - Organization</title>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GSOC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            background-color: #bf2bc6;
+            font-size: 20px;
+        }
+    </style>
     <script>
-        // var ans = {{ans}}
-
-// function docu() {
-// document.getElementById('display').innerHTML = "Hey Siri"
-// console.log({
-// {
-// ans
-// }
-// })
-// }
-</script>
-
+        var ans = {{ans}}
+    </script>
 </head>
-
 <body>
-
-
-    <form action="/check" method="POST" role="form">
+    <form style="margin:100px 400px" float="center" action="/check" method="POST" role="form">
         <legend>Enter the Organization Number</legend>
-
         <div class="form-group">
-            <label for="">label</label>
-            <input type="number" name='organo' class="form-control" id="" placeholder="Input field">
+            <input style="border: black;" type="number" name='organo' class="form-control" id="" placeholder="Input field">
         </div>
-
-        <button type="submit" class="btn btn-primary" onclick="docu()">Submit</button>
-
-        <div class="row">
-            <h3 id="demo" style="color: white;"></h3>
+        <div>
+            {{ans}}
         </div>
-
     </form>
-
 </body>
-<script type="text/javascript">
-    function docu() {
-        document.getElementById("demo").innerHTML = "Hello World";
-    }
-</script>
-
 </html>
